@@ -1177,3 +1177,52 @@ footer {
         transition: none;
     }
 }
+
+/* ============ LANGUAGE SELECTOR ============ */
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.lang-link {
+    color: var(--bsc-dark);
+    text-decoration: none;
+    transition: var(--transition);
+    opacity: 0.5;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.lang-link:hover {
+    color: var(--bsc-orange);
+    opacity: 0.8;
+}
+
+.lang-link.active {
+    color: var(--bsc-white);
+    background-color: var(--bsc-orange);
+    opacity: 1;
+    pointer-events: none;
+}
+
+.lang-separator {
+    color: var(--bsc-gray);
+    opacity: 0.3;
+    user-select: none;
+}
+
+@media (max-width: 1024px) {
+    .lang-selector {
+        margin-left: 0;
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        width: 100%;
+        justify-content: center;
+    }
+}
+
